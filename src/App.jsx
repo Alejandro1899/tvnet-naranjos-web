@@ -1,29 +1,29 @@
-import { Route, Routes } from 'react-router-dom'
-import {Home} from './components/Home.jsx'
-import { AboutUs } from './components/AboutUs.jsx'
-import {Channels} from './components/Channels.jsx'
-import { PricePlans } from './components/PricePlans.jsx'
-import { NavBar } from './components/NavBar.jsx'
-import './styles/NavBar.css'
-
+import { Routes, Route } from 'react-router-dom';
+import { Home } from './components/Home';
+import { AboutUs } from './components/AboutUs';
+import { Channels } from './components/Channels';
+import { PricePlans } from './components/PricePlans';
+import { ContactUs } from './components/ContactUs';
+import Footer from './components/Footer';
+import { NavigationBar } from './components/NavigationBar';
 
 function App() {
-
   return (
     <>
-    <header>
-      <NavBar/>
-    </header>
-    <div>
+
+      <NavigationBar/>
+
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/components/AboutUs.jsx' element={<AboutUs/>}/>
-        <Route path='/components/Channels.jsx' element={<Channels/>}/>
-        <Route path='/components/PricePlans.jsx' element={<PricePlans/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/Channels" element={<Channels />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/PricePlans" element={<PricePlans />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
       </Routes>
-    </div>
+
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
