@@ -7,7 +7,7 @@ export const Home = () => {
       <CarouselHome />
 
       {/* Sección de Bienvenida */}
-      <div className="grid w-full h-60 bg-blue-600  place-items-center">
+      <div className="rounded grid w-full h-72 bg-blue-600  place-items-center">
         <div className="text-center m-4">
           <h2 className="text-white text-2xl font-bold font-serif">
             Bienvenido a Tvnet
@@ -21,7 +21,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
 
       {/* Mapa de Google */}
       <div className="grid w-full h-[450px]">

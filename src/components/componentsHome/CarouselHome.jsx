@@ -32,13 +32,13 @@ const CarouselHome = () => {
   };
 
   return (
-    <div className="relative w-full h-[400px] overflow-hidden">
+    <div className="relative w-full h-[300px] overflow-hidden">
       <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {slides.map((slide, index) => (
           <div key={index} className="min-w-full h-full relative">
-            <img src={slide.image} alt={`Slide ${index}`} className="w-full h-full object-cover" />
+            <img src={slide.image} alt={`Slide ${index}`} className="absolute h-max object-cover" />
             {/* Contenedor Superpuesto */}
-            <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white">
+            <div className="left-1 absolute inset-y-11 bg-sky-700 bg-opacity-40 flex flex-col items-start justify-center text-white">
               <h2 className="text-3xl font-bold">{slide.title}</h2>
               <p className="mt-2 text-lg">{slide.description}</p>
             </div>

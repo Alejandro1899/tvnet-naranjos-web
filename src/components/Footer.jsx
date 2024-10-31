@@ -38,7 +38,7 @@ const footerData = [
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8 rounded-s">
-      <div className=" container mx-auto grid grid-cols-1 md:grid-cols-1 gap-8">
+      <div className=" container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
         {footerData.map((section, index) => (
           <div key={index} className="footer-data ml-3">
             {section.logo && <div className="mb-2"><img className="w-40 -mt-9 -mb-14" src={section.logo} alt="TVNET Vleazquez Juarez Asociados S.A de C.V" /></div>}
