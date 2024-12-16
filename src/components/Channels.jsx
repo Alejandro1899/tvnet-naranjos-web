@@ -14,7 +14,6 @@ export const Channels = () => {
             </div>
           </div>
         </div>
-
       </div>
       <div className="flex w-full  justify-center items-center">
         <div className="m-4 w-72 ">

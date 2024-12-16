@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .blog-categories-wrapper {
-    background-image: url(./assets/image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 120px 0px;
-    background-attachment: fixed;
+  background-image: url(./assets/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 120px 0px;
+  background-attachment: fixed;
+}
+
+.back-color {
+  background-color: #1c4eba;
 }

@@ -36,11 +36,11 @@ export const NavigationBar = () => {
     };
 
     return (
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 p-4 rounded relative">
+        <nav className="back-color border-gray-200  dark:border-gray-700 p-4 rounded relative">
             <div className="max-w-screen-xl flex items-center justify-between mx-auto">
                 {/* Logo */}
                 <Link to='/' className="flex items-center space-x-3">
-                    <img src="/src/assets/Version02.png" className="h-[70px]" alt="Tvnet Logo" />
+                    <img src='https://i.ibb.co/hX516HS/tvent.png' className="h-20 text-white" alt="Tvnet Logo" />
                 </Link>
 
                 {/* Botón del menú móvil */}
@@ -48,8 +48,7 @@ export const NavigationBar = () => {
                     onClick={toggleMenu}
                     type="button"
                     className="inline-flex items-center p-1 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-expanded={isMenuOpen ? 'true' : 'false'}
-                >
+                    aria-expanded={isMenuOpen ? 'true' : 'false'}>
                     <span className="sr-only">Open main menu</span>
                     <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
